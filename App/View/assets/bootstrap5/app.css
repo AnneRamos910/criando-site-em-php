@@ -1,0 +1,23 @@
+
+.red {
+     box-shadow: inset 0px 0px 4px rgba(255, 0, 0, 1);
+}
+
+.green {
+    box-shadow: inset 0px 0px 4px rgba(0, 150, 0, 1);
+}
+
+.blue {
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 255, 1);
+}
+
+.text-primary{
+    color: rgb(248, 135, 0) !important;
+}
+
+.btn-150{ 
+    min-width: 150px !important;
+}
+.button {
+    color: rgb(19, 161, 161);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+
+}
+
+</style>
+</head>
+<body>
+<h3 class="text-center">Gerenciador de Conteúdo</h3>
+<div>
+  <a href="http://localhost/aula.php/?pagina=admin&metodo=create">
+
+     <h3>Criar Publicação:</h3>
+  </a>
+  
+  
+
+</div>
+
+
+
+<br>
+<table border="2" font:arial;>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Alteração</th>
+                <th scope="col">Deleção</th>
+            </tr>
+        </thead>
+
+
+        {% for postagem in postagens %}
+       
+        <tr>
+           
+            <th>{{postagem.id}}</th>
+            <th>{{postagem.titulo}}</th>
+            <th><a href="http://localhost/aula.php/?pagina=admin&metodo=change&id={{postagem.id}}"><i class="fa fa-edit"></i></a></th>
+            <th><a href="http://localhost/aula.php/?pagina=admin&metodo=delete&id={{postagem.id}}"><i class="fa-regular fa-trash-can"></i></a></th>
+        </tr>
+        {% endfor %}
+    </table>
+
+   

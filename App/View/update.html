@@ -1,0 +1,44 @@
+<html>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-6 offset-sm-3 card bg-light p-5">
+
+                <form method="post" action="?pagina=admin&metodo=update">
+                    <h2 class="text-center">Alterar Publicação</h2>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col">
+                            <label class="form-label">Título:</label><br>
+                            <input type="'text" name="titulo" value="{{titulo}}" class="form-control"
+                                placeholder="Insira um título "><br><br>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+
+                        <div class="col">
+                            <label class="form-label">Conteudo:</label><br>
+                            <textarea name="conteudo" cols="30" rows="15">{{conteudo}}</textarea><br><br>
+                            <input type="hidden" name="id" value="{{id}}">
+
+                            <i class="fa-solid fa-share-from-square"></i> <input type="submit" value="Alterar" button type="button" 
+                            class="btn btn-outline-primary"></button>
+
+                        </div>
+
+
+
+                       
+
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<section>
+    
+        <h3 class="text-center">Postagem</h3>
+
+
+        {% for postagem in postagens %}
+        <article>
+            <header>
+
+
+
+                <h3><a href="http://localhost/aula.php/?pagina=post&id={{postagem.id}}"> <i
+                            class="fa fa-circle-chevron-right fa-xs"></i>{{postagem.titulo}}</a></h3><br>
+
+
+            </header>
+            <p>{{postagem.conteudo}}</p>
+        </article>
+        {% endfor %}
+</section>
